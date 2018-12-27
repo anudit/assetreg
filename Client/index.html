@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <h1>Register Vehicle:</h1>
+        <form action="" method="" id="formRegisterVehicle">
+            Address of the Account :
+            <input type="text" name="formAddress" id="formAddress" value="0x707aC3937A9B31C225D8C240F5917Be97cab9F20">
+            <br />Owner Name :
+            <input type="text" name="formOwner" id="formOwner" value="RandomDude">
+            <br />Vehicle Identification Number :
+            <input type="text" name="formVin" id="formVin" value="0x55503635435730303037">
+            <br />Car Company :
+            <input type="text" name="formCarCompany" id="formCarCompany" value="Bugatti">
+            <br />Car Model :
+            <input type="text" name="formCarModel" id="formCarModel" value="Chiron">
+            <br />Jurisdiction :
+            <input type="text" name="formJurisdiction" id="formJurisdiction" value="DEL">
+            <br>
+            <input type="submit" id="formRegisterVehicleSubmit"/>
+        </form>
+        <hr>
+
+        <h1>Unregister Vehicle:</h1>
+        <form action="" method="" id="formUnRegisterVehicle">
+            Vehicle Identification Number :
+            <input type="text" name="formVin" id="formVin" value="0x55503635435730303037">
+            <br />
+            <input type="submit" id="formUnRegisterVehicleSubmit"/>
+        </form>
+        <hr>
+
+        <h1>Transfer Vehicle:</h1>
+        <form action="" method="" id="formTransferVehicle">
+            Vehicle Identification Number :
+            <input type="text" name="formTransferVin" id="formTransferVin" value="0x55503635435730303037">
+            <br />
+            New Owner :
+            <input type="text" name="formTransferNO" id="formTransferNO" value="0x707aC3937A9B31C225D8C240F5917Be97cab9F20">
+            <br />
+            <input type="submit" id="formTransferVehicleSubmit"/>
+        </form>
+        <hr>
+        
+        <h1>Get Vehicle Details:</h1>
+            <input type="text" name="getDetailsVin" id="getDetailsVin" value="0x55503635435730303037">
+            <br />
+            <button id="btnGetVehicleDetails">GET</button>
+        <hr>
+
+        <h1>Get Vehicle List Length:</h1>
+            <button id="getVinLength">GET</button>
+        <hr>
+
+        <h1>Details:</h1>
+        <div id="details">
+            <p>Address of the Account : <span id="address"></span></p>
+            <p>Owner Name : <span id="ownerName"></span></p>
+            <p>Vehicle Identification Number : <span id="vin"></span></p>
+            <p>Date of Registration : <span id="dor"></span></p>
+            <p>Car Details : <span id="carCompany"></span>, <span id="carModel"></span></p>
+            <p>Jurisdiction : <span id="jurisdiction"></span></p>
+            <p>Vehicle Status : <span id="vehicleStatus"></span></p>
+        </div>
+        <p id="result"></p>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
+</html>
